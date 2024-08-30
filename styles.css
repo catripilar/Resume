@@ -1,0 +1,181 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #b3e5fc); /* Degradê do branco para azul claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+    background: linear-gradient(to bottom, #000000, #0d47a1); /* Degradê do preto para azul bem escuro */
+    color: #e0e0e0;
+}
+
+.resume {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+body.dark-mode .resume {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #003366;
+    transition: color 0.5s;
+}
+
+body.dark-mode header h1 {
+    color: #82b1ff;
+}
+
+header p {
+    margin: 5px 0;
+    color: #555;
+    transition: color 0.5s;
+}
+
+body.dark-mode header p {
+    color: #bbb;
+}
+
+header span {
+    font-size: 0.8em;
+    color: #666;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0059b3;
+}
+
+body.dark-mode a {
+    color: #82b1ff;
+}
+
+body.dark-mode a:hover {
+    color: #bbdefb;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #003366;
+    transition: border-color 0.5s, color 0.5s;
+}
+
+body.dark-mode section h2 {
+    border-color: #555;
+    color: #82b1ff;
+}
+
+.project {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+}
+
+.project:hover {
+    background-color: #e9ecef;
+}
+
+body.dark-mode .project {
+    background-color: #333;
+}
+
+body.dark-mode .project:hover {
+    background-color: #2a2a2a;
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #003366;
+    transition: color 0.5s;
+}
+
+body.dark-mode .project h3 {
+    color: #82b1ff;
+}
+
+.about-description,
+.project-description,
+.skills li {
+    color: #444;
+    transition: color 0.5s, letter-spacing 0.3s;
+}
+
+body.dark-mode .about-description,
+body.dark-mode .project-description,
+body.dark-mode .skills li {
+    color: #ccc;
+}
+
+.about-description:hover,
+.project-description:hover,
+.skills li:hover {
+    letter-spacing: 1px;
+}
+
+.skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.theme-toggle {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#toggleButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#toggleButton:hover {
+    background-color: #0059b3;
+}
+
+body.dark-mode #toggleButton {
+    background-color: #82b1ff;
+    color: #121212;
+}
+
+body.dark-mode #toggleButton:hover {
+    background-color: #bbdefb;
+    color: #121212;
+}
