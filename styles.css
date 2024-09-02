@@ -179,3 +179,30 @@ body.dark-mode #toggleButton:hover {
     background-color: #bbdefb;
     color: #121212;
 }
+
+.superteam-member {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.superteam-member a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #003366;
+    background-color: white;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, #003366, #0059b3, #82b1ff, #bbdefb) 1;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s, border-image 0.5s;
+}
+
+.superteam-member a:hover {
+    color: #0059b3;
+    border-image: linear-gradient(45deg, #bbdefb, #82b1ff, #0059b3, #003366) 1;
+}
